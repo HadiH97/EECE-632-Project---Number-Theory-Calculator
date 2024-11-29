@@ -43,9 +43,9 @@ After installing the dependencies, you can run the project locally with **Vite**
     npm run dev
     ```
 
-2. This will start the local server, and you should be able to access the project in your browser at:
+2. This will start the local server, and you should be able to access the project in your browser at (Port will be provided by the terminal):
     ```
-    http://localhost:3000
+    http://localhost:xxxx
     ```
 
 ## Usage
@@ -54,9 +54,4 @@ Once the project is running locally, you can start using the **Number Theory Cal
 
 Simply follow the instructions on the interface to perform calculations.
 
-## License
-
-Include your license information here if you have one. For example:
-- MIT License
-- GPL-3.0 License
 
