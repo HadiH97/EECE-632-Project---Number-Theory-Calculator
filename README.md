@@ -16,6 +16,7 @@ This project is a **Number Theory Calculator** built for the **EECE 632** course
 
 ## Installation
  **Important**: Make sure to disable any adblocker (especially uBlock origin, as it may not work and will only show a blank screen)
+
 To get started with the project, follow these steps:
 
 1. **Clone the repository** to your local machine:
