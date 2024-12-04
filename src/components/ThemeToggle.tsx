@@ -16,8 +16,8 @@ export const ThemeToggle: React.FC = () => {
     >
       <span className="sr-only">Toggle theme</span>
       <span
-        className={`absolute inset-0 flex items-center transition-transform duration-200 ease-in-out
-                   ${theme === 'dark' ? 'translate-x-9' : 'translate-x-2'}`}
+        className={`absolute inset-0 flex items-center px-2 transition-transform duration-200 ease-in-out
+                   ${theme === 'dark' ? 'justify-end' : 'justify-start'}`}
       >
         {theme === 'dark' ? (
           <Moon className="h-5 w-5 text-indigo-200" />

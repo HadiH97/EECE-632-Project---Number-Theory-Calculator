@@ -63,7 +63,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
           <span>Clear All</span>
         </button>
       </div>
-      <div className="space-y-3 max-h-60 overflow-y-auto custom-scrollbar">
+      <div className="space-y-3 max-h-60 overflow-y-auto pr-4 custom-scrollbar">
         {history.map((calc) => (
           <div
             key={calc.id}
@@ -76,19 +76,21 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
             >
               <X className="w-4 h-4" />
             </button>
-            <div className="flex justify-between items-start pr-8">
-              <div>
+            <div className="flex flex-col">
+              <div className="flex justify-between items-start w-full mb-2">
                 <span className="text-sm font-medium text-indigo-600 dark:text-indigo-400">{calc.operation}</span>
-                <p className="text-gray-700 dark:text-gray-300 mt-1">
+                <span className="text-xs text-gray-500 dark:text-gray-500 ml-2 shrink-0">
+                  {new Date(calc.timestamp).toLocaleString()}
+                </span>
+              </div>
+              <div className="pr-8">
+                <p className="text-gray-700 dark:text-gray-300">
                   <InlineMath math={calc.input} />
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 mt-1">
                   {renderResult(calc.operation, calc.result)}
                 </p>
               </div>
-              <span className="text-xs text-gray-500 dark:text-gray-500">
-                {new Date(calc.timestamp).toLocaleString()}
-              </span>
             </div>
           </div>
         ))}

@@ -152,12 +152,14 @@ function App() {
   };
 
   const renderInputs = () => {
+    const inputClasses = "block w-full rounded-md border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm font-medium text-gray-900 dark:text-gray-100 px-4 py-3 shadow-sm placeholder:text-gray-500 dark:placeholder:text-gray-400";
+    
     switch (activeTab) {
       case 'fastexp':
         return (
           <>
             <div className="space-y-2">
-              <label htmlFor="number" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Base</label>
+              <label htmlFor="number" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Base</label>
               <input
                 type="text"
                 inputMode="numeric"
@@ -165,12 +167,12 @@ function App() {
                 id="number"
                 value={number}
                 onChange={(e) => handleNumberChange(e, setNumber)}
-                className="block w-full rounded-md border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className={inputClasses}
                 placeholder="Enter base number"
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="exponent" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Exponent</label>
+              <label htmlFor="exponent" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Exponent</label>
               <input
                 type="text"
                 inputMode="numeric"
@@ -178,12 +180,12 @@ function App() {
                 id="exponent"
                 value={exponent}
                 onChange={(e) => handleNumberChange(e, setExponent)}
-                className="block w-full rounded-md border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className={inputClasses}
                 placeholder="Enter exponent"
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="modulus" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Modulus</label>
+              <label htmlFor="modulus" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Modulus</label>
               <input
                 type="text"
                 inputMode="numeric"
@@ -191,7 +193,7 @@ function App() {
                 id="modulus"
                 value={modulus}
                 onChange={(e) => handleNumberChange(e, setModulus)}
-                className="block w-full rounded-md border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className={inputClasses}
                 placeholder="Enter modulus"
               />
             </div>
@@ -201,7 +203,7 @@ function App() {
         return (
           <>
             <div className="space-y-2">
-              <label htmlFor="remainders" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="remainders" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
                 Remainders (comma-separated)
                 <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Example: 2,3,4</span>
               </label>
@@ -210,12 +212,12 @@ function App() {
                 id="remainders"
                 value={remainders}
                 onChange={(e) => handleCommaSeparatedChange(e, setRemainders)}
-                className="block w-full rounded-md border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className={inputClasses}
                 placeholder="Enter remainders (e.g., 2,3,4)"
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="moduli" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="moduli" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">
                 Moduli (comma-separated)
                 <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Example: 3,5,7</span>
               </label>
@@ -224,7 +226,7 @@ function App() {
                 id="moduli"
                 value={moduli}
                 onChange={(e) => handleCommaSeparatedChange(e, setModuli)}
-                className="block w-full rounded-md border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className={inputClasses}
                 placeholder="Enter moduli (e.g., 3,5,7)"
               />
             </div>
@@ -233,7 +235,7 @@ function App() {
       default:
         return (
           <div className="space-y-2">
-            <label htmlFor="number" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Enter a number</label>
+            <label htmlFor="number" className="block text-sm font-semibold text-gray-700 dark:text-gray-300">Enter a number</label>
             <input
               type="text"
               inputMode="numeric"
@@ -241,7 +243,7 @@ function App() {
               id="number"
               value={number}
               onChange={(e) => handleNumberChange(e, setNumber)}
-              className="block w-full rounded-md border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-700 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className={inputClasses}
               placeholder="Enter a positive integer"
             />
           </div>
