@@ -26,7 +26,7 @@ To get started with the project, follow these steps:
 
 2. **Navigate** into the project directory:
     ```bash
-    cd repository-name
+    cd .\EECE-632-Project---Number-Theory-Calculator\
     ```
 
 3. **Install dependencies**:
