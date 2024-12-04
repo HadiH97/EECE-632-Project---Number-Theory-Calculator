@@ -15,7 +15,7 @@ A web-based **Number Theory Calculator** for the **EECE 632** course. This tool 
 This project is a **Number Theory Calculator** built for the **EECE 632** course. The application is built using **Vite** for fast development and **npm** for managing dependencies.
 
 ## Installation
- **Important:**Make sure to disable any adblocker (especially uBlock origin, as it may not work and will only show a blank screen)
+ **Important**:Make sure to disable any adblocker (especially uBlock origin, as it may not work and will only show a blank screen)
 To get started with the project, follow these steps:
 
 1. **Clone the repository** to your local machine:
