@@ -21,7 +21,7 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository** to your local machine:
     ```bash
-    git clone https://github.com/username/repository-name.git
+    https://github.com/HadiH97/EECE-632-Project---Number-Theory-Calculator.git
     ```
 
 2. **Navigate** into the project directory:
