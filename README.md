@@ -47,7 +47,10 @@ After installing the dependencies, you can run the project locally with **Vite**
     ```
     http://localhost:xxxx
     ```
-
+3. Aletrnatively, we deployed the link on netlify, so you can easily access it through this link:
+    ```
+    https://numbertheorycalc.netlify.app/
+    ```
 ## Usage
 
 Once the project is running locally, you can start using the **Number Theory Calculator**. The web app provides an interface where you can perform various number theory calculations.
