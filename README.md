@@ -8,7 +8,6 @@ A web-based **Number Theory Calculator** for the **EECE 632** course. This tool 
 2. [Installation](#installation)
 3. [Running the Project](#running-the-project)
 4. [Usage](#usage)
-5. [License](#license)
 
 ## Introduction
 
