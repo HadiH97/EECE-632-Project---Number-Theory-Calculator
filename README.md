@@ -43,7 +43,7 @@ After installing the dependencies, you can run the project locally with **Vite**
     npm run dev
     ```
 
-2. This will start the local server, and you should be able to access the project in your browser at (Port will be provided by the terminal. You can also simply CTRL+Click of the localhost link provided by the terminal):
+2. This will start the local server, and you should be able to access the project in your browser(Port will be provided by the terminal. You can also simply CTRL+Click of the localhost link provided by the terminal) at:
     ```
     http://localhost:xxxx
     ```
